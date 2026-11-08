@@ -43,7 +43,10 @@ critical-section = { version = "1.2.0", features = ["std"] }
 # guest
 default = ["std"]
 std = ["stateless-validator-common/std"]
-sp1 = ["zkvm-interface"]
+sp1 = ["native-keccak-shim"]
+pico = ["native-keccak-shim"]
+# Defines alloy's `native_keccak256` from `zkvm_keccak256`, for zkVMs whose runtime does not.
+native-keccak-shim = ["zkvm-interface"]
 zkvm-interface = [
     "alloy-consensus/crypto-backend",
     "dep:zkvm-interface",

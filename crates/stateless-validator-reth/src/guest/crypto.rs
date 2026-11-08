@@ -1,7 +1,8 @@
 //! Crypto provider selection for the guest.
 
-#[cfg(feature = "sp1")]
-pub(crate) mod sp1;
+// SP1 and Pico take alloy's `native_keccak256` from the guest; ZisK's runtime defines it.
+#[cfg(feature = "native-keccak-shim")]
+pub(crate) mod native_keccak;
 
 use stateless_validator_common::Sha256Hasher;
 

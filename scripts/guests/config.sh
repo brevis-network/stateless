@@ -7,6 +7,11 @@ guest_config() {
             COMPILER_IMAGE="ghcr.io/eth-act/ere/ere-compiler-openvm:0.20.0@sha256:bd721f337b91cac2beffd560377145f7ee8f77dd3b235642c48cbbceef5547f5"
             SERVER_IMAGE="ghcr.io/eth-act/ere/ere-server-openvm:0.20.0@sha256:db58fed53e626ca791db4940ced55957ec04060ded912a4b01463d0092ffae4e"
             ;;
+        pico)
+            ZKVM_VERSION="613d6ae"
+            COMPILER_IMAGE="ghcr.io/eth-act/ere/ere-compiler-pico:0.20.0@sha256:73be3121d3bfcfe502ff6172f9ad4a48556a8ade7bf4a838cdf2733ca1c3ce07"
+            SERVER_IMAGE="ghcr.io/eth-act/ere/ere-server-pico:0.20.0@sha256:cb92cf2a3c5f5f6473df13a4b2d13c8095ba12376c9dc301ca1dc67b26914109"
+            ;;
         sp1)
             ZKVM_VERSION="v6.9.0"
             COMPILER_IMAGE="ghcr.io/eth-act/ere/ere-compiler-sp1:0.20.0@sha256:3612ee81acf2a97d12e30229e872881f517affaf3174108de567a648252c1b25"
